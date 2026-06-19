@@ -22,8 +22,15 @@
   </div>
 </header>
 
+<div class="filter-bar" role="tablist" aria-label="Filter by meal">
+  <button class="filter-btn active" data-meal="all" role="tab" aria-selected="true">All <span class="filter-count">21</span></button>
+  <button class="filter-btn" data-meal="breakfast" role="tab" aria-selected="false">Breakfast <span class="filter-count">5</span></button>
+  <button class="filter-btn" data-meal="lunch" role="tab" aria-selected="false">Lunch <span class="filter-count">6</span></button>
+  <button class="filter-btn" data-meal="dinner" role="tab" aria-selected="false">Dinner <span class="filter-count">10</span></button>
+</div>
+
 <div class="section-header">
-  <span class="section-title">All Recipes</span>
+  <span class="section-title" id="section-label">All Recipes</span>
   <span class="section-count" id="recipe-count">21</span>
 </div>
 

@@ -84,11 +84,34 @@ ${sourceHtml}`;
 function initGrid(recipes) {
   const grid = document.getElementById('recipe-grid');
   if (!grid) return;
-  grid.innerHTML = recipes.map(renderCard).join('');
-  // keyboard support
-  grid.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') card.click(); });
+
+  const labels = { all: 'All Recipes', breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner' };
+
+  function renderFiltered(meal) {
+    const filtered = meal === 'all' ? recipes : recipes.filter(r => r.meal === meal);
+    grid.innerHTML = filtered.map(renderCard).join('');
+    grid.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') card.click(); });
+    });
+    const countEl = document.getElementById('recipe-count');
+    const labelEl = document.getElementById('section-label');
+    if (countEl) countEl.textContent = filtered.length;
+    if (labelEl) labelEl.textContent = labels[meal] || 'All Recipes';
+  }
+
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      renderFiltered(btn.dataset.meal);
+    });
   });
+
+  renderFiltered('all');
 }
 
 function initDetail(recipes) {
