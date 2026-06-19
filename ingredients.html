@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingredients — Blueprint Recipes</title>
+  <meta name="description" content="Every ingredient used across Bryan Johnson's Blueprint protocol recipes, organized by category.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="ing-hero">
+  <a class="back-link" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    All Recipes
+  </a>
+  <h1 class="ing-title">Ingredients</h1>
+  <p class="ing-subtitle">Every ingredient across all 21 Blueprint recipes, organized by category.</p>
+
+  <div class="ing-search-wrap">
+    <svg class="ing-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+    </svg>
+    <input type="search" id="ing-search" class="ing-search" placeholder="Search ingredients…" autocomplete="off" spellcheck="false">
+    <span class="ing-count-badge" id="ing-total">—</span>
+  </div>
+</header>
+
+<main class="ing-main" id="ing-root">
+  <!-- populated by ingredients.js -->
+</main>
+
+<footer>
+  Recipes from <a href="https://blueprint.bryanjohnson.com/blogs/recipes" target="_blank" rel="noopener">Bryan Johnson's Blueprint Protocol</a>.
+  Not affiliated with Blueprint.
+</footer>
+
+<script src="ingredients.js"></script>
+</body>
+</html>
