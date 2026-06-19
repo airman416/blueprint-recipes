@@ -1,0 +1,645 @@
+[
+  {
+    "id": "01",
+    "title": "Super Veggie",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/how-to-make-my-anti-aging-lunch-live-to-120",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 1",
+    "image": "01_super_veggie.jpg",
+    "tagline": "Bryan's daily lunch \u2014 anti-aging bowl of lentils and cruciferous veg.",
+    "macros": {
+      "calories": "489 kcal",
+      "protein": "26.5g",
+      "carbs": "61.1g",
+      "fat": "20.1g",
+      "fiber": "~21.4g"
+    },
+    "ingredients": [
+      "45g \u2014 Black lentils (dry)",
+      "250g \u2014 Broccoli (head+stalk)",
+      "150g \u2014 Cauliflower",
+      "50g \u2014 Shiitake or Maitake mushrooms",
+      "5g (1 clove) \u2014 Garlic",
+      "3g \u2014 Ginger root",
+      "30g (1 lime) \u2014 Lime juice",
+      "~4g (1 tbsp) \u2014 Cumin",
+      "15g (1 tbsp) \u2014 Apple cider vinegar",
+      "10g (1 tbsp) \u2014 Hemp seeds",
+      "13g (1 tbsp) \u2014 Extra virgin olive oil"
+    ],
+    "instructions": "Boil or steam broccoli, cauliflower, mushrooms, ginger, garlic 7\u20139 min. Cook lentils 18\u201320 min al dente. Blend all with cumin, ACV, lime. Top with hemp seeds and EVOO. Season with potassium salt."
+  },
+  {
+    "id": "02",
+    "title": "Nutty Pudding",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-nutty-pudding-recipe",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 1",
+    "image": "02_nutty_pudding.webp",
+    "tagline": "Bryan's go-to longevity dessert/breakfast.",
+    "macros": {
+      "calories": "552 kcal",
+      "protein": "10.0g",
+      "carbs": "36.6g",
+      "fat": "44.5g",
+      "fiber": "~12.8g"
+    },
+    "ingredients": [
+      "~1g (\u00bd tsp) \u2014 Ceylon cinnamon",
+      "5g (1 tsp) \u2014 Ground flaxseeds",
+      "5g (1 tsp) \u2014 Sunflower lecithin",
+      "6g (2 tsp) \u2014 Ground walnuts",
+      "50g (\u00bc cup) \u2014 Berries (mixed)",
+      "30g (3 cherries) \u2014 Dark cherries",
+      "30g (3 tbsp) \u2014 Ground macadamia nuts",
+      "5g (\u00bc nut) \u2014 Brazil nut",
+      "50\u2013100ml \u2014 Macadamia nut milk",
+      "60ml (60g) \u2014 Pomegranate juice",
+      "24g (2 tbsp) \u2014 Chia seeds (optional)"
+    ],
+    "instructions": "Add all ingredients to blender. Mix on high ~2 min until foamy. Pour into a dish and add toppings."
+  },
+  {
+    "id": "03",
+    "title": "Grain-Free Porridge with Butterfly Pea Flower",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/recipes/grain-free-porridge-with-butterfly-pea-flower",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 1",
+    "image": "03_grain_free_porridge.webp",
+    "tagline": "Almond, flax, chia power meal.",
+    "macros": {
+      "calories": "445 kcal",
+      "protein": "15.5g",
+      "carbs": "22.9g",
+      "fat": "36.1g",
+      "fiber": "~8.0g"
+    },
+    "ingredients": [
+      "250ml \u2014 Macadamia nut milk",
+      "30g (\u00bc cup) \u2014 Almond flour",
+      "15g (1 tbsp) \u2014 Hemp seeds",
+      "10g (1 tbsp) \u2014 Chia seeds",
+      "10g (1 tbsp) \u2014 Ground flax",
+      "~2g (\u00bd tsp) \u2014 Vanilla extract",
+      "5g (1 tsp) \u2014 Butterfly pea flower powder",
+      "~1g (\u00bc tsp) \u2014 Cardamom",
+      "50g \u2014 Fresh berries"
+    ],
+    "instructions": "Add all ingredients to a blender. Blend until smooth. Top with fresh berries. Serve and enjoy."
+  },
+  {
+    "id": "04",
+    "title": "Blueprint Superfood Smoothie",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/recipes/blueprint-superfood-smoothie",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 1",
+    "image": "04_superfood_smoothie.webp",
+    "tagline": "Polyphenols, antioxidants and flavanols in a glass.",
+    "macros": {
+      "calories": "389 kcal",
+      "protein": "8.9g",
+      "carbs": "50.4g",
+      "fat": "21.8g",
+      "fiber": "~17.6g"
+    },
+    "ingredients": [
+      "75g (\u00bd cup) \u2014 Strawberries",
+      "75g (\u00bd cup) \u2014 Blueberries",
+      "45g (\u00bc cup) \u2014 Pomegranate arils",
+      "75g (\u00bd cup) \u2014 Dark cherries, pitted",
+      "240ml (1 cup) \u2014 Almond milk",
+      "10g (1 tbsp) \u2014 Flax seeds",
+      "15g (5\u20136 nuts) \u2014 Macadamia nuts",
+      "5g (1 tsp) \u2014 Chia seeds",
+      "5g (1 tsp) \u2014 Blueprint cacao"
+    ],
+    "instructions": "Add all ingredients to a blender. Blend until smooth. Serve and enjoy."
+  },
+  {
+    "id": "05",
+    "title": "Blueprint Meal Prep Green Smoothie",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/recipes/three-blueprint-meal-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 1",
+    "image": "05_green_smoothie.jpg",
+    "tagline": "Greens-packed meal prep smoothie.",
+    "macros": {
+      "calories": "576 kcal",
+      "protein": "12.3g",
+      "carbs": "61.1g",
+      "fat": "37.2g",
+      "fiber": "~21.4g"
+    },
+    "ingredients": [
+      "80g (\u00bd cup) \u2014 Pomegranate seeds",
+      "45g \u2014 Dark cherries, pitted",
+      "40g \u2014 Celery stalk, chopped",
+      "100g (1 medium) \u2014 Banana",
+      "30g (1 handful) \u2014 Kale",
+      "30g (1 handful) \u2014 Spinach",
+      "10g (1 tbsp) \u2014 Hemp seeds",
+      "5g (1 tsp) \u2014 Wheatgrass powder",
+      "15g (\u00bd lemon) \u2014 Lemon juice",
+      "5g (1 tsp) \u2014 Chia seeds",
+      "30g (\u00bc cup) \u2014 Macadamia nuts",
+      "240ml (1 cup) \u2014 Macadamia milk",
+      "~2g (\u00bc tsp) \u2014 Vanilla extract"
+    ],
+    "instructions": "Add all ingredients to a high-speed blender. Blend until smooth and creamy. Adjust liquid or add ice. Serve chilled."
+  },
+  {
+    "id": "06",
+    "title": "Buddha Bowl",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/recipes/buddha-bowl-recipe",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 1",
+    "image": "06_buddha_bowl.webp",
+    "tagline": "Roasted sweet potato bowl with white beans and massaged kale.",
+    "macros": {
+      "calories": "747 kcal",
+      "protein": "27.2g",
+      "carbs": "103.0g",
+      "fat": "29.7g",
+      "fiber": "~36.0g"
+    },
+    "ingredients": [
+      "200g (1 medium) \u2014 Japanese sweet potato",
+      "100g (\u00bd head) \u2014 Asparagus",
+      "100g (5\u20136 leaves) \u2014 Kale",
+      "120g (1 medium, roasted) \u2014 Red pepper",
+      "80g (2 medium) \u2014 Carrots",
+      "30g (\u00bc cup) \u2014 Walnuts",
+      "10g (handful) \u2014 Cilantro",
+      "7g (\u00bd tsp) \u2014 Extra virgin olive oil",
+      "20g (handful) \u2014 Green onions",
+      "15g \u2014 Lemon juice",
+      "5g (handful) \u2014 Dill, chopped",
+      "120g (\u00bd cup) \u2014 White beans",
+      "15g (1 tbsp) \u2014 Apple cider vinegar",
+      "~2g (\u00bd tsp) \u2014 Cumin seeds"
+    ],
+    "instructions": "Roast sweet potato 45-60 min at 400\u00b0F. Roast red pepper 25-30 min. Boil asparagus 2-5 min. Toss white beans with lemon and dill. Massage kale with EVOO. Shred carrots with ACV and cumin. Assemble and top with walnuts."
+  },
+  {
+    "id": "07",
+    "title": "Asian Dense Bean Salad",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/recipes/asian-dense-bean-salad",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 2",
+    "image": "07_asian_dense_bean_salad.webp",
+    "tagline": "High-protein triple-bean salad with miso sesame dressing.",
+    "macros": {
+      "calories": "748 kcal",
+      "protein": "42.2g",
+      "carbs": "100.1",
+      "fat": "23.8",
+      "fiber": "~35.0g"
+    },
+    "ingredients": [
+      "240g (1 cup) \u2014 Chickpeas, cooked",
+      "240g (1 cup) \u2014 Cannellini beans, cooked",
+      "150g (1 cup) \u2014 Edamame, shelled",
+      "180g (2 cups) \u2014 Cabbage, shredded",
+      "110g (1 cup) \u2014 Carrots, shredded",
+      "40g (4 stalks) \u2014 Green onions",
+      "30g \u2014 Almonds, chopped",
+      "54g (3 tbsp) \u2014 White miso",
+      "30g (2 tbsp) \u2014 Tamari (low sodium)",
+      "30g (2 tbsp) \u2014 Rice vinegar",
+      "18g (2 tbsp) \u2014 Sesame seeds, roasted",
+      "15g (1 tbsp) \u2014 Lime juice",
+      "5g (1 tsp) \u2014 Extra virgin olive oil",
+      "7g (1 tsp) \u2014 Manuka honey"
+    ],
+    "instructions": "Combine chickpeas, cannellini beans, edamame, cabbage, carrots, and green onions. Whisk miso, tamari, rice vinegar, sesame seeds, lime juice, EVOO, and honey. Toss. Top with almonds. Chill 30 min."
+  },
+  {
+    "id": "08",
+    "title": "Black Lentil and Roasted Veg Bowl",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/recipes/three-blueprint-meal-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 2",
+    "image": "08_black_lentil_roasted_veg_bowl.jpg",
+    "tagline": "Hearty lentil bowl with roasted vegetables and chickpea dressing.",
+    "macros": {
+      "calories": "541 kcal",
+      "protein": "31.2g",
+      "carbs": "74.7",
+      "fat": "15.1",
+      "fiber": "~26.1g"
+    },
+    "ingredients": [
+      "140g (\u00be cup) \u2014 Black lentils, dry",
+      "150g (1 small) \u2014 Zucchini",
+      "150g (1 small) \u2014 Red bell pepper",
+      "100g (1 cup) \u2014 Cauliflower florets",
+      "10g (2 tsp) \u2014 Macadamia nut oil",
+      "60g (1 packed cup) \u2014 Baby spinach/kale",
+      "50g \u2014 Shiitake mushrooms",
+      "120g (\u00be cup) \u2014 Chickpeas (dressing)",
+      "13g (1 tbsp) \u2014 Olive oil (dressing)",
+      "15g (1 tbsp) \u2014 Lemon juice (dressing)",
+      "15g (1 tbsp) \u2014 Nutritional yeast (dressing)",
+      "60g (4 tbsp) \u2014 Water",
+      "5g (1 small) \u2014 Garlic clove (dressing)"
+    ],
+    "instructions": "Cook lentils 20 min. Roast zucchini, bell pepper, cauliflower at 400\u00b0F 20-25 min. Saut\u00e9 mushrooms 3-5 min. Blend chickpeas, lemon, garlic, nutritional yeast, olive oil, water for dressing. Layer and drizzle."
+  },
+  {
+    "id": "09",
+    "title": "Black Lentil and Olive Salad with Spiced Roasted Carrots",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/blueprint-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 2",
+    "image": "09_black_lentil_olive_salad.jpg",
+    "tagline": "Sophisticated lentil salad with castelvetrano olives and sundried tomato hummus.",
+    "macros": {
+      "calories": "863 kcal",
+      "protein": "37.6g",
+      "carbs": "102.5",
+      "fat": "36.5",
+      "fiber": "~35.9g"
+    },
+    "ingredients": [
+      "190g (1 cup) \u2014 Black lentils (dry)",
+      "240g (3 large) \u2014 Carrots, thick coins",
+      "30g \u2014 Shallot",
+      "30g (2 tbsp) \u2014 Olive oil",
+      "15g (1 tbsp) \u2014 Maple syrup",
+      "15g (1 tbsp) \u2014 Red wine vinegar",
+      "5g (1 tsp) \u2014 Dijon mustard",
+      "40g (\u00bc cup) \u2014 Black currants",
+      "80g (\u00bd cup) \u2014 Castelvetrano olives, pitted",
+      "50g (\u2153 cup) \u2014 Roasted almonds",
+      "15g (\u00bc cup) \u2014 Flat-leaf parsley",
+      "10g (2 tbsp) \u2014 Fresh mint",
+      "120g (\u00bd cup, to serve) \u2014 Sundried tomato hummus"
+    ],
+    "instructions": "Roast carrots and shallot with olive oil and maple syrup at 425\u00b0F 25-30 min. Cook lentils 20 min. Dress lentils with vinegar, Dijon, currants, olives, almonds, parsley, mint. Serve with sundried tomato hummus."
+  },
+  {
+    "id": "10",
+    "title": "Black Bean and Mushroom Bowl with Chickpea Rice",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/blueprint-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 2",
+    "image": "10_black_bean_mushroom_bowl.jpg",
+    "tagline": "Mexican-inspired bowl over protein-rich chickpea rice.",
+    "macros": {
+      "calories": "560 kcal",
+      "protein": "29.9g",
+      "carbs": "91.3",
+      "fat": "9.9",
+      "fiber": "~32.0g"
+    },
+    "ingredients": [
+      "425g (1 can) \u2014 Black beans, cooked",
+      "150g (1 cup) \u2014 Cherry tomatoes",
+      "80g (\u00bd medium) \u2014 Onion, diced",
+      "100g (1 cup) \u2014 Oyster mushrooms",
+      "13g (1 tbsp) \u2014 Olive oil",
+      "40g (\u00bc cup) \u2014 Pickled red onions",
+      "30g (1 cup) \u2014 Fresh spinach",
+      "55g (\u00bd cup) \u2014 Shredded carrots",
+      "50g (\u00bd cup) \u2014 Sliced radish",
+      "15g (\u00bc cup) \u2014 Cilantro, chopped",
+      "240g (1\u00bd cups) \u2014 Chickpea rice, cooked"
+    ],
+    "instructions": "Saut\u00e9 onion, mushrooms, tomatoes with olive oil, cumin, garlic powder. Add black beans and heat through. Serve over chickpea rice with spinach, carrots, radish, pickled onions, cilantro."
+  },
+  {
+    "id": "11",
+    "title": "Lemon Red Lentil Soup",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/blueprint-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 4",
+    "image": "11_lemon_red_lentil_soup.jpg",
+    "tagline": "Golden turmeric-spiced lentil soup with bright lemon finish.",
+    "macros": {
+      "calories": "337 kcal",
+      "protein": "18.0g",
+      "carbs": "52.6",
+      "fat": "6.3",
+      "fiber": "~18.4g"
+    },
+    "ingredients": [
+      "20g (1\u20132 tbsp) \u2014 Olive oil",
+      "360g (3 large) \u2014 Carrots",
+      "180g (2 stalks) \u2014 Celery stalks",
+      "150g (1 medium) \u2014 Yellow onion",
+      "20g (4 cloves) \u2014 Garlic",
+      "1500ml \u2014 Vegetable stock",
+      "225g (1\u00bd cups dry) \u2014 Red lentils",
+      "2 leaves \u2014 Bay leaves",
+      "~2g (\u00bd tsp) \u2014 Turmeric",
+      "~2g (1 tsp) \u2014 Cumin",
+      "30g (1 lemon) \u2014 Lemon juice"
+    ],
+    "instructions": "Saut\u00e9 carrots, celery, onion, garlic in olive oil. Add stock, red lentils, bay leaves, turmeric, cumin. Simmer 20-25 min. Remove bay leaves. Finish with lemon juice. Season to taste."
+  },
+  {
+    "id": "12",
+    "title": "Sweet Potato Curry with Quinoa",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/recipes/three-blueprint-meal-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 2",
+    "image": "12_sweet_potato_curry_quinoa.jpg",
+    "tagline": "Turmeric-ginger curry with 6 vegetables over fluffy quinoa.",
+    "macros": {
+      "calories": "388 kcal",
+      "protein": "11.7g",
+      "carbs": "74.2",
+      "fat": "6.5",
+      "fiber": "~26.0g"
+    },
+    "ingredients": [
+      "375g (1\u00bd medium) \u2014 Sweet potato",
+      "75g (\u00bd cup) \u2014 Cauliflower florets",
+      "75g (\u00bd cup) \u2014 Green beans",
+      "75g (\u00bd cup) \u2014 Broccoli florets",
+      "65g (\u00bd cup) \u2014 Carrots",
+      "40g (\u00bc cup) \u2014 Peas",
+      "5g (1 tsp) \u2014 Fresh ginger",
+      "~2g (1 tsp) \u2014 Turmeric powder",
+      "~1g (\u00bd tsp) \u2014 Black pepper",
+      "15g (1 tsp) \u2014 Lime juice",
+      "20g (1 cup) \u2014 Cilantro",
+      "120g (\u00bd cup) \u2014 Macadamia nut milk",
+      "5g (1 tsp) \u2014 Avocado oil",
+      "5g (1 clove) \u2014 Garlic",
+      "30g (\u00bc small) \u2014 Onion",
+      "185g \u2014 Quinoa, cooked"
+    ],
+    "instructions": "Cook quinoa per package. Saut\u00e9 garlic, ginger, onion in avocado oil. Add spices, sweet potato, carrots, broccoli, cauliflower and cover with water. Simmer 25 min. Add green beans, peas, macadamia milk, simmer 5 more min. Add lime and cilantro. Serve over quinoa."
+  },
+  {
+    "id": "13",
+    "title": "Sweet Potato and Cabbage Curry with Cauliflower Rice",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/blueprint-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 2",
+    "image": "13_sweet_potato_cabbage_curry.jpg",
+    "tagline": "Indian-spiced dry curry served over cauliflower rice.",
+    "macros": {
+      "calories": "305 kcal",
+      "protein": "7.6g",
+      "carbs": "42.4",
+      "fat": "13.9",
+      "fiber": "~14.8g"
+    },
+    "ingredients": [
+      "200g (2 cups) \u2014 Cabbage, shredded",
+      "200g (1 small/medium) \u2014 Sweet potato, diced",
+      "110g (1 medium) \u2014 Onion",
+      "26g (2 tbsp) \u2014 Olive oil",
+      "~2g (1 tsp) \u2014 Cumin seeds",
+      "~2g \u2014 Dry red chili",
+      "~2g (\u00bd tsp) \u2014 Turmeric powder",
+      "~2g (1 tsp) \u2014 Coriander powder",
+      "15g (\u00bc cup) \u2014 Cilantro",
+      "15g (1 tbsp) \u2014 Lime juice",
+      "380g (2 cups) \u2014 Cauliflower rice"
+    ],
+    "instructions": "Heat oil; add cumin seeds until sizzling. Cook onion until golden. Add dry chili, sweet potato, turmeric, coriander. Stir-fry 5 min. Add cabbage, cook covered 10-12 min. Garnish with cilantro and lime. Serve over cauliflower rice."
+  },
+  {
+    "id": "14",
+    "title": "Chickpea Stew",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/blueprint-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 2",
+    "image": "14_chickpea_stew.jpg",
+    "tagline": "Mediterranean-spiced chickpea stew with za'atar and roasted peppers.",
+    "macros": {
+      "calories": "580 kcal",
+      "protein": "24.5g",
+      "carbs": "79.2",
+      "fat": "19.9",
+      "fiber": "~27.7g"
+    },
+    "ingredients": [
+      "25g (5 cloves) \u2014 Garlic",
+      "~6g (1 tbsp) \u2014 Cumin",
+      "26g (2 tbsp) \u2014 Extra virgin olive oil",
+      "32g (2 tbsp) \u2014 Tomato paste",
+      "~6g (1 tbsp) \u2014 Paprika",
+      "~3g (1 tsp) \u2014 Red pepper flakes",
+      "500g (3 cups) \u2014 Chickpeas, cooked",
+      "~8g (2\u20133 tsp) \u2014 Za'atar",
+      "150g (1 medium) \u2014 Roasted bell pepper"
+    ],
+    "instructions": "Saut\u00e9 garlic in EVOO until golden. Add tomato paste, paprika, cumin, red pepper flakes and stir 2 min. Add chickpeas, za'atar, bay leaves, and roasted bell pepper. Add water to cover. Simmer 15-20 min."
+  },
+  {
+    "id": "15",
+    "title": "Butternut Squash Soup with Roasted Apples and Carrots",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/blueprint-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 5",
+    "image": "15_butternut_squash_soup.jpg",
+    "tagline": "Warming garam masala soup with roasted fruit for sweetness.",
+    "macros": {
+      "calories": "269 kcal",
+      "protein": "3.9g",
+      "carbs": "32.7",
+      "fat": "15.8",
+      "fiber": "~11.5g"
+    },
+    "ingredients": [
+      "110g (1 medium) \u2014 Onion, diced",
+      "15g (3 cloves) \u2014 Garlic",
+      "600g (4 cups cubed) \u2014 Butternut squash",
+      "300g (2 medium) \u2014 Honeycrisp apples",
+      "200g (2 large) \u2014 Carrots",
+      "~5g (1 tsp) \u2014 Garam masala",
+      "~2g (\u00bd tsp) \u2014 Ginger powder",
+      "960ml (4 cups) \u2014 Vegetable broth",
+      "240ml (1 cup) \u2014 Coconut milk",
+      "26g (2 tbsp) \u2014 Olive oil"
+    ],
+    "instructions": "Roast squash, apples, carrots with olive oil until caramelized. Saut\u00e9 onion and garlic. Add roasted veg, broth, garam masala, ginger. Simmer 15 min. Blend smooth. Stir in coconut milk. Season."
+  },
+  {
+    "id": "16",
+    "title": "Mushroom and Walnut Bolognese with Spaghetti Squash",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/blueprint-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 2",
+    "image": "16_mushroom_walnut_bolognese.jpg",
+    "tagline": "Plant-based bolognese over roasted spaghetti squash.",
+    "macros": {
+      "calories": "436 kcal",
+      "protein": "15.2g",
+      "carbs": "50.8",
+      "fat": "24.8",
+      "fiber": "~17.8g"
+    },
+    "ingredients": [
+      "225g \u2014 Cremini mushrooms, chopped",
+      "40g (\u00bc cup) \u2014 Onion",
+      "40g (\u00bc cup) \u2014 Carrots",
+      "40g (\u00bc cup) \u2014 Celery",
+      "10g (2 cloves) \u2014 Garlic",
+      "60g (\u00bd cup) \u2014 Walnuts, chopped",
+      "16g (1 tbsp) \u2014 Tomato paste",
+      "340g (12 oz) \u2014 Tomato sauce",
+      "30g (2 tbsp) \u2014 Tamari (GF)",
+      "30g (2 tbsp) \u2014 Balsamic vinegar",
+      "500g \u2014 Spaghetti squash (\u00bd squash)",
+      "5g (1 tsp) \u2014 Olive oil"
+    ],
+    "instructions": "Roast spaghetti squash halved at 400\u00b0F 40 min. Saut\u00e9 mirepoix and garlic. Add mushrooms and walnuts, brown. Add tomato paste, sauce, tamari, balsamic. Simmer 20 min. Serve over squash strands."
+  },
+  {
+    "id": "17",
+    "title": "Vegetable Stir Fry with Cauliflower Rice",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/blueprint-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 2",
+    "image": "17_vegetable_stir_fry.jpg",
+    "tagline": "Asian-style stir fry with mung bean sprouts and shiitake over cauliflower rice.",
+    "macros": {
+      "calories": "360 kcal",
+      "protein": "21.2g",
+      "carbs": "56.5",
+      "fat": "11.2",
+      "fiber": "~19.8g"
+    },
+    "ingredients": [
+      "75g (\u00bd medium) \u2014 Onion, sliced",
+      "150g (\u00bc wedge) \u2014 Red cabbage, shredded",
+      "150g (\u00bc wedge) \u2014 White cabbage, shredded",
+      "200g (2 cups) \u2014 Mung bean sprouts",
+      "200g (2 cups) \u2014 Broccoli, chopped",
+      "225g (8 oz) \u2014 Shiitake mushrooms, sliced",
+      "150g (1 cup) \u2014 Sugar snap peas",
+      "~8g (1 tbsp) \u2014 Ginger powder",
+      "~8g (1 tbsp) \u2014 Garlic powder",
+      "30g (2 tbsp) \u2014 Tamari (GF, low sodium)",
+      "600g (20 oz) \u2014 Cauliflower rice",
+      "15g (1 tbsp) \u2014 Olive oil",
+      "5g (\u00bd tbsp) \u2014 Hemp seeds (garnish)"
+    ],
+    "instructions": "Heat oil in wok over high heat. Add onion 2 min. Add all vegetables and stir fry 5-7 min. Add ginger, garlic, tamari. Cook 2 more min. Serve over cauliflower rice. Top with hemp seeds."
+  },
+  {
+    "id": "18",
+    "title": "Cauliflower Lentil Loaf",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/blueprint-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 4",
+    "image": "18_cauliflower_lentil_loaf.jpg",
+    "tagline": "Hearty plant-based loaf with smoky chipotle glaze.",
+    "macros": {
+      "calories": "130 kcal",
+      "protein": "11.6g",
+      "carbs": "22.8",
+      "fat": "1.1",
+      "fiber": "~8.0g"
+    },
+    "ingredients": [
+      "200g \u2014 Cooked lentils",
+      "300g \u2014 Riced cauliflower",
+      "150g \u2014 Onion, chopped",
+      "225g (8 oz) \u2014 Mushrooms",
+      "30g \u2014 Nutritional yeast",
+      "5g \u2014 Minced garlic",
+      "5g (1 tsp) \u2014 Dijon mustard",
+      "~2g (\u00bd tsp) \u2014 Smoked paprika",
+      "~2g (\u00bd tsp) \u2014 Cumin",
+      "~1g \u2014 Black pepper",
+      "~1g \u2014 Chipotle powder",
+      "80ml (glaze) \u2014 Ketchup (unsweetened)",
+      "5ml (glaze) \u2014 Liquid smoke"
+    ],
+    "instructions": "Preheat oven to 375\u00b0F. Saut\u00e9 onion, garlic, mushrooms. Mix with lentils, cauliflower rice, nutritional yeast, Dijon, paprika, cumin, pepper, chipotle. Pack into loaf pan. Brush with ketchup + liquid smoke glaze. Bake 40-45 min until firm."
+  },
+  {
+    "id": "19",
+    "title": "Mushroom Walnut Stuffed Acorn Squash",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/recipes/blueprint-thanksgiving-recipe-guide",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 4",
+    "image": "19_mushroom_stuffed_acorn_squash.jpg",
+    "tagline": "Festive acorn squash filled with savory-sweet mushroom walnut stuffing.",
+    "macros": {
+      "calories": "310 kcal",
+      "protein": "7.8g",
+      "carbs": "47.0",
+      "fat": "13.8",
+      "fiber": "~16.5g"
+    },
+    "ingredients": [
+      "1000g (2 medium, halved) \u2014 Acorn squash",
+      "13g (1 tbsp) \u2014 Olive oil",
+      "454g (16 oz) \u2014 Cremini mushrooms",
+      "60g (4 tbsp) \u2014 Walnuts, chopped",
+      "60g (4 tbsp) \u2014 Unsweetened dried cranberries",
+      "15g (1 tbsp) \u2014 Honey",
+      "~4g (\u00bd tbsp) \u2014 Cinnamon"
+    ],
+    "instructions": "Roast squash halves with olive oil at 425\u00b0F 35-40 min. Saut\u00e9 mushrooms 5-7 min. Stir in walnuts, cranberries, honey, cinnamon. Fill squash halves. Bake 10 more min."
+  },
+  {
+    "id": "20",
+    "title": "Herb Seasoned Cauliflower 'Turkey' with Sweet Potato Mash",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/blueprint-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 4",
+    "image": "20_cauliflower_turkey.jpg",
+    "tagline": "Whole roasted cauliflower centerpiece with mash and green beans.",
+    "macros": {
+      "calories": "336 kcal",
+      "protein": "10.9g",
+      "carbs": "58.9",
+      "fat": "8.9",
+      "fiber": "~20.6g"
+    },
+    "ingredients": [
+      "800g (1 large) \u2014 Cauliflower head",
+      "30g (2 tbsp) \u2014 Olive oil",
+      "10g \u2014 Garlic powder",
+      "10g \u2014 Onion powder",
+      "10g \u2014 Smoked paprika",
+      "5g each \u2014 Dried thyme + rosemary",
+      "15g \u2014 Nutritional yeast",
+      "100ml (for basting) \u2014 Vegetable broth",
+      "800g \u2014 Sweet potatoes",
+      "60ml \u2014 Almond milk",
+      "5g \u2014 Garlic powder (mash)",
+      "~2g (for mash) \u2014 Cinnamon",
+      "400g \u2014 Green beans"
+    ],
+    "instructions": "Preheat oven to 400\u00b0F. Coat cauliflower with herb mixture and roast 45-60 min, basting with broth. Boil sweet potatoes until soft; mash with almond milk, garlic, cinnamon. Blanch green beans 3-4 min, finish in ice water."
+  },
+  {
+    "id": "21",
+    "title": "Chickpea Vegetable Frittata",
+    "source_url": "https://blueprint.bryanjohnson.com/blogs/news/blueprint-recipes",
+    "category": "Vegetarian/Vegan",
+    "serves": "Serves 4",
+    "image": "21_chickpea_frittata.jpg",
+    "tagline": "Egg-free frittata using chickpea flour batter with garden vegetables.",
+    "macros": {
+      "calories": "322 kcal",
+      "protein": "16.9g",
+      "carbs": "46.0",
+      "fat": "8.0",
+      "fiber": "~16.1g"
+    },
+    "ingredients": [
+      "240g \u2014 Chickpea flour",
+      "360ml \u2014 Water",
+      "80g (\u00bd medium) \u2014 Onion, chopped",
+      "240g (2 medium) \u2014 Red peppers, diced",
+      "200g (1 medium) \u2014 Zucchini, diced",
+      "20g (1 bunch) \u2014 Parsley, chopped",
+      "15g (1 bunch) \u2014 Chives, chopped",
+      "10g (2 cloves) \u2014 Garlic cloves",
+      "90g (1 medium) \u2014 Roma tomato",
+      "225g (8 oz) \u2014 Mushrooms, sliced",
+      "15g (1 tbsp) \u2014 Olive oil"
+    ],
+    "instructions": "Preheat oven to 375\u00b0F. Whisk chickpea flour with water until smooth. Saut\u00e9 all vegetables in olive oil 5 min. Pour batter over vegetables in oven-safe pan. Bake 20-25 min until set and golden."
+  }
+]

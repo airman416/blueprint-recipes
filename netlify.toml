@@ -1,0 +1,7 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/recipe/:id"
+  to = "/recipe.html?id=:id"
+  status = 200
