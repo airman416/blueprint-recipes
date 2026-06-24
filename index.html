@@ -5,45 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blueprint Recipes — Bryan Johnson</title>
   <meta name="description" content="21 science-backed recipes from Bryan Johnson's Blueprint longevity protocol. High-fiber, plant-rich meals optimized for health and longevity.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blueprint Recipes — Bryan Johnson" />
+  <meta property="og:description" content="21 science-backed recipes from Bryan Johnson's Blueprint longevity protocol. High-fiber, plant-rich meals optimized for health and longevity." />
+  <meta property="og:image" content="https://recipes.armaanagrawal.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://recipes.armaanagrawal.com" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blueprint Recipes — Bryan Johnson" />
+  <meta name="twitter:description" content="21 science-backed recipes from Bryan Johnson's Blueprint longevity protocol. High-fiber, plant-rich meals optimized for health and longevity." />
+  <meta name="twitter:image" content="https://recipes.armaanagrawal.com/og-image.png" />
+
+  <link rel="stylesheet" href="https://use.typekit.net/kyi7jre.css" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="hero">
-  <p class="hero-eyebrow">Bryan Johnson · Blueprint Protocol</p>
-  <h1>Blueprint<br><span>Recipes</span></h1>
-  <p class="hero-tagline">21 science-backed meals designed for longevity — high-fiber, plant-rich, optimized for health.</p>
-  <div class="hero-stats">
-    <div class="hero-stat"><strong>21</strong><span>Recipes</span></div>
-    <div class="hero-stat"><strong>100%</strong><span>Plant-Based</span></div>
-    <div class="hero-stat"><strong>0</strong><span>Junk</span></div>
+<nav class="site-nav">
+  <a href="https://armaanagrawal.com">A.A.</a>
+</nav>
+
+<div class="page-wrap">
+
+  <header class="hero">
+    <p class="hero-eyebrow">Bryan Johnson · Blueprint Protocol</p>
+    <h1>Blueprint<br><span>Recipes</span></h1>
+    <p class="hero-tagline">21 science-backed meals designed for longevity — high-fiber, plant-rich, optimized for health.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>21</strong><span>Recipes</span></div>
+      <div class="hero-stat"><strong>100%</strong><span>Plant-Based</span></div>
+      <div class="hero-stat"><strong>0</strong><span>Junk</span></div>
+    </div>
+    <a href="ingredients.html" class="hero-nav-link">Ingredients List →</a>
+  </header>
+
+  <div class="filter-bar" role="tablist" aria-label="Filter by meal">
+    <button class="filter-btn active" data-meal="all" role="tab" aria-selected="true">All <span class="filter-count">21</span></button>
+    <button class="filter-btn" data-meal="breakfast" role="tab" aria-selected="false">Breakfast <span class="filter-count">5</span></button>
+    <button class="filter-btn" data-meal="lunch" role="tab" aria-selected="false">Lunch <span class="filter-count">6</span></button>
+    <button class="filter-btn" data-meal="dinner" role="tab" aria-selected="false">Dinner <span class="filter-count">10</span></button>
   </div>
-  <div class="hero-nav">
-    <a href="ingredients.html" class="hero-nav-link">🧺 Ingredients List →</a>
+
+  <div class="section-header">
+    <span class="section-title" id="section-label">All Recipes</span>
+    <span class="section-count" id="recipe-count">21</span>
   </div>
-</header>
 
-<div class="filter-bar" role="tablist" aria-label="Filter by meal">
-  <button class="filter-btn active" data-meal="all" role="tab" aria-selected="true">All <span class="filter-count">21</span></button>
-  <button class="filter-btn" data-meal="breakfast" role="tab" aria-selected="false">Breakfast <span class="filter-count">5</span></button>
-  <button class="filter-btn" data-meal="lunch" role="tab" aria-selected="false">Lunch <span class="filter-count">6</span></button>
-  <button class="filter-btn" data-meal="dinner" role="tab" aria-selected="false">Dinner <span class="filter-count">10</span></button>
+  <main class="grid" id="recipe-grid" aria-label="Recipe grid">
+    <!-- populated by app.js -->
+  </main>
+
 </div>
-
-<div class="section-header">
-  <span class="section-title" id="section-label">All Recipes</span>
-  <span class="section-count" id="recipe-count">21</span>
-</div>
-
-<main class="grid" id="recipe-grid" aria-label="Recipe grid">
-  <!-- populated by app.js -->
-</main>
 
 <footer>
-  Recipes from <a href="https://blueprint.bryanjohnson.com/blogs/recipes" target="_blank" rel="noopener">Bryan Johnson's Blueprint Protocol</a>.
-  Not affiliated with Blueprint.
+  Recipes from <a href="https://blueprint.bryanjohnson.com/blogs/recipes" target="_blank" rel="noopener">Bryan Johnson's Blueprint Protocol</a>. Not affiliated with Blueprint.
 </footer>
 
 <script src="app.js"></script>
