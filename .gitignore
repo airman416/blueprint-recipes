@@ -1,2 +1,5 @@
 TASK.md
 .DS_Store
+
+# Local Netlify folder
+.netlify

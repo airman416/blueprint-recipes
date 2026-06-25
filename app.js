@@ -1,4 +1,4 @@
-// Blueprint Recipes — app.js
+// Blueprint Recipes — app.js (Armaan Agrawal design system)
 
 function fmtMacro(val) {
   if (!val) return '—';
@@ -15,6 +15,10 @@ function macroUnit(key, val) {
   return v.endsWith('g') ? '' : 'g';
 }
 
+function capitalize(s) {
+  return s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
+}
+
 function renderCard(r) {
   const img = r.image
     ? `<img src="images/${r.image}" alt="${r.title}" loading="lazy">`
@@ -29,20 +33,22 @@ function renderCard(r) {
     }).join('');
 
   return `
-<article class="card" onclick="location.href='recipe.html?id=${r.id}'" role="link" tabindex="0" aria-label="${r.title}">
+<a class="card" href="recipe.html?id=${r.id}" aria-label="${r.title}">
+  <span class="card-arrow">→</span>
   <div class="card-img">
     ${img}
     <span class="card-tag">${r.category || 'Blueprint'}</span>
   </div>
   <div class="card-body">
+    ${r.meal ? `<p class="card-meal">${capitalize(r.meal)}</p>` : ''}
     <h2 class="card-title">${r.title}</h2>
     ${r.tagline ? `<p class="card-tagline">${r.tagline}</p>` : ''}
     <div class="macros">${macroBadges}</div>
   </div>
   <div class="card-footer">
-    <span class="btn">View Recipe →</span>
+    <span class="cta">View Recipe →</span>
   </div>
-</article>`;
+</a>`;
 }
 
 function renderDetail(r) {
@@ -57,15 +63,18 @@ function renderDetail(r) {
   }).join('');
 
   const ingredients = (r.ingredients || [])
-    .map(i => `<li>${i}</li>`).join('');
+    .map(i => {
+      // strip leading "Xg — " pattern for cleaner display; keep as-is otherwise
+      return `<li>${i.replace(/^[^—–]+[—–]\s*/, '')}</li>`;
+    }).join('');
 
   const sourceHtml = r.source_url
-    ? `<div class="detail-source">Original recipe: <a href="${r.source_url}" target="_blank" rel="noopener">${r.source_url}</a></div>`
+    ? `<div class="detail-source">Source: <a href="${r.source_url}" target="_blank" rel="noopener">${r.source_url}</a></div>`
     : '';
 
   return `
 <a class="back-link" href="index.html">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
   All Recipes
 </a>
 ${img}
@@ -74,7 +83,7 @@ ${img}
   ${r.serves ? `<span class="detail-serves">${r.serves}</span>` : ''}
 </div>
 <h1 class="detail-title">${r.title}</h1>
-${r.tagline ? `<p class="detail-tagline">"${r.tagline}"</p>` : ''}
+${r.tagline ? `<p class="detail-tagline">${r.tagline}</p>` : ''}
 <div class="macros-table">${macroCells}</div>
 ${ingredients ? `<div class="section-block"><h2>Ingredients</h2><ul class="ingredients-list">${ingredients}</ul></div>` : ''}
 ${r.instructions ? `<div class="section-block"><h2>Instructions</h2><p class="instructions-text">${r.instructions}</p></div>` : ''}
@@ -90,9 +99,6 @@ function initGrid(recipes) {
   function renderFiltered(meal) {
     const filtered = meal === 'all' ? recipes : recipes.filter(r => r.meal === meal);
     grid.innerHTML = filtered.map(renderCard).join('');
-    grid.querySelectorAll('.card').forEach(card => {
-      card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') card.click(); });
-    });
     const countEl = document.getElementById('recipe-count');
     const labelEl = document.getElementById('section-label');
     if (countEl) countEl.textContent = filtered.length;
@@ -120,7 +126,7 @@ function initDetail(recipes) {
   const id = new URLSearchParams(location.search).get('id');
   const recipe = recipes.find(r => r.id === id);
   if (!recipe) {
-    root.innerHTML = `<a class="back-link" href="index.html">← All Recipes</a><div class="not-found"><h2>Recipe not found</h2><p>Check the URL or <a href="index.html" style="color:var(--green)">browse all recipes</a>.</p></div>`;
+    root.innerHTML = `<a class="back-link" href="index.html">← All Recipes</a><div class="not-found"><h2>Recipe not found</h2><p>Check the URL or <a href="index.html">browse all recipes</a>.</p></div>`;
     return;
   }
   document.title = `${recipe.title} — Blueprint`;
