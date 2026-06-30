@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Meal Plan — Slow Carb for 2</title>
+  <meta name="description" content="A complete slow-carb weekly meal plan for two people — includes daily schedule, grocery list, Sunday prep system, and fridge organization.">
+
+  <meta property="og:title" content="Weekly Meal Plan — Slow Carb for 2" />
+  <meta property="og:description" content="Complete slow-carb system: daily meals, grocery list, Sunday batch prep, fridge zones, and work-lunch logistics." />
+  <meta property="og:image" content="https://recipes.armaanagrawal.com/og-image.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://recipes.armaanagrawal.com/meal-plan.html" />
+
+  <link rel="stylesheet" href="https://use.typekit.net/kyi7jre.css" />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Meal Plan page overrides ── */
+    .plan-hero { margin-bottom: 4rem; }
+    .plan-hero .hero-eyebrow { margin-bottom: 0.75rem; }
+
+    .plan-section { margin-bottom: 4rem; }
+    .plan-section-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--green);
+      border-top: 2px solid var(--green);
+      padding-top: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    /* ── Calorie banner ── */
+    .cal-banner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--gray-200);
+      border: 1px solid var(--gray-200);
+      margin-bottom: 3rem;
+    }
+    .cal-cell {
+      background: var(--white);
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .cal-cell .cal-val {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--green);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    .cal-cell .cal-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gray-500);
+    }
+
+    /* ── Day cards ── */
+    .week-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      border: 1px solid var(--gray-200);
+    }
+    .day-row {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .day-row:last-child { border-bottom: none; }
+    .day-label {
+      background: var(--black);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 1rem 0.5rem;
+      text-align: center;
+      line-height: 1.3;
+    }
+    .day-row.cheat-day .day-label {
+      background: var(--green);
+    }
+    .day-meals {
+      padding: 1.25rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 600px) {
+      .day-meals { grid-template-columns: 1fr; gap: 0.5rem; }
+      .cal-banner { grid-template-columns: 1fr; }
+    }
+    .meal-slot {}
+    .meal-slot-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gray-500);
+      margin-bottom: 0.3rem;
+    }
+    .meal-slot-name {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--black);
+      line-height: 1.3;
+    }
+    .meal-slot-cal {
+      font-size: 0.75rem;
+      color: var(--green);
+      margin-top: 0.2rem;
+    }
+    .day-total {
+      grid-column: 1 / -1;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--gray-500);
+      padding: 0.5rem 1.5rem;
+      border-top: 1px solid var(--gray-200);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Grocery list ── */
+    .grocery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      border: 1px solid var(--gray-200);
+    }
+    @media (max-width: 580px) { .grocery-grid { grid-template-columns: 1fr; } }
+    .grocery-col {
+      padding: 1.5rem;
+      border-right: 1px solid var(--gray-200);
+    }
+    .grocery-col:last-child { border-right: none; }
+    .grocery-col-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .grocery-col ul {
+      list-style: none;
+      padding: 0;
+    }
+    .grocery-col ul li {
+      font-size: 0.9rem;
+      padding: 0.35rem 0;
+      border-bottom: 1px solid #f3f4f6;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .grocery-col ul li:last-child { border-bottom: none; }
+    .grocery-col ul li .qty {
+      font-size: 0.78rem;
+      color: var(--gray-500);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* ── Prep timeline ── */
+    .prep-timeline {
+      border: 1px solid var(--gray-200);
+    }
+    .prep-row {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .prep-row:last-child { border-bottom: none; }
+    .prep-time {
+      background: #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--green);
+      letter-spacing: 0.05em;
+      padding: 1rem 0.5rem;
+      text-align: center;
+      border-right: 1px solid var(--gray-200);
+    }
+    .prep-action {
+      padding: 1rem 1.25rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .prep-action strong {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+    .prep-action span {
+      color: var(--gray-500);
+      font-size: 0.82rem;
+    }
+
+    /* ── Fridge diagram ── */
+    .fridge-diagram {
+      border: 2px solid var(--black);
+      overflow: hidden;
+    }
+    .fridge-zone {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--gray-200);
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .fridge-zone:last-child { border-bottom: none; }
+    .fridge-zone.top { background: #f0fdf4; }
+    .fridge-zone.middle { background: #fff; }
+    .fridge-zone.bottom { background: #fafafa; }
+    .fridge-zone.freezer { background: #eff6ff; border-top: 2px solid var(--black); }
+    .fridge-zone-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green);
+      padding-top: 0.15rem;
+    }
+    .fridge-zone-label.freezer-label { color: #1d4ed8; }
+    .fridge-zone-content {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: var(--gray-700);
+    }
+
+    /* ── Rules block ── */
+    .rules-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      border: 1px solid var(--gray-200);
+    }
+    @media (max-width: 580px) { .rules-grid { grid-template-columns: 1fr; } }
+    .rule-card {
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--gray-200);
+      border-right: 1px solid var(--gray-200);
+    }
+    .rule-card:nth-child(even) { border-right: none; }
+    .rule-card:nth-last-child(-n+2) { border-bottom: none; }
+    .rule-num {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.4rem;
+    }
+    .rule-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+    .rule-body {
+      font-size: 0.85rem;
+      color: var(--gray-700);
+      line-height: 1.55;
+    }
+
+    /* ── Cheat day note ── */
+    .cheat-banner {
+      background: var(--green);
+      color: var(--white);
+      padding: 1.5rem 2rem;
+      margin-bottom: 3rem;
+    }
+    .cheat-banner p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .cheat-banner strong { font-weight: 700; }
+
+    /* ── Recipe link pills ── */
+    .recipe-link {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--green);
+      text-decoration: underline;
+      text-decoration-color: rgba(6,64,43,0.3);
+      margin-top: 0.2rem;
+    }
+    .recipe-link:hover { text-decoration-color: var(--green); }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="https://armaanagrawal.com">A.A.</a>
+</nav>
+
+<div class="page-wrap">
+
+  <header class="hero plan-hero">
+    <p class="hero-eyebrow">Slow Carb · 9-to-5 · 2 People</p>
+    <h1>Weekly<br><span>Meal Plan</span></h1>
+    <p class="hero-tagline">A complete food system for two — real quantities, Sunday prep sequence, grocery list, fridge zones, and work-lunch logistics. One cheat day built in.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>~2,200</strong><span>Cal/day (Armaan)</span></div>
+      <div class="hero-stat"><strong>~1,750</strong><span>Cal/day (Akshita)</span></div>
+      <div class="hero-stat"><strong>60 min</strong><span>Sunday prep</span></div>
+    </div>
+    <a href="index.html" class="hero-nav-link">← All Recipes</a>
+  </header>
+
+  <!-- CALORIE CHECK -->
+  <div class="plan-section">
+    <p class="plan-section-title">Daily Targets</p>
+    <div class="cal-banner">
+      <div class="cal-cell">
+        <span class="cal-val">~150g</span>
+        <span class="cal-label">Protein/day (Armaan)</span>
+      </div>
+      <div class="cal-cell">
+        <span class="cal-val">~100g</span>
+        <span class="cal-label">Protein/day (Akshita)</span>
+      </div>
+      <div class="cal-cell">
+        <span class="cal-val">0</span>
+        <span class="cal-label">White carbs, sugar, fruit (Mon–Fri)</span>
+      </div>
+    </div>
+
+    <p style="font-size:0.9rem; line-height:1.7; color:var(--gray-700); margin-bottom:1rem;">
+      The previous plan was <strong>770 cal/day short</strong> — this version corrects that with larger portions, eggs at breakfast, and added fat (ghee, olive oil, nuts) to hit maintenance. Each meal below is sized for 2 people. Armaan eats 1.3× portions; Akshita 1×.
+    </p>
+  </div>
+
+  <!-- WEEKLY SCHEDULE -->
+  <div class="plan-section">
+    <p class="plan-section-title">The Week at a Glance</p>
+
+    <div class="week-grid">
+
+      <!-- MON -->
+      <div class="day-row">
+        <div class="day-label">Mon</div>
+        <div>
+          <div class="day-meals">
+            <div class="meal-slot">
+              <div class="meal-slot-label">Breakfast</div>
+              <div class="meal-slot-name">Egg & Lentil Power Bowl</div>
+              <div class="meal-slot-cal">490 cal · 40g protein</div>
+              <a class="recipe-link" href="recipe.html?id=26">View recipe →</a>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Lunch</div>
+              <div class="meal-slot-name">Black Bean & Roasted Veg Salad with Tahini</div>
+              <div class="meal-slot-cal">545 cal · 26g protein</div>
+              <a class="recipe-link" href="recipe.html?id=27">View recipe →</a>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Dinner</div>
+              <div class="meal-slot-name">Spiced Lentil Dal with Cauliflower</div>
+              <div class="meal-slot-cal">485 cal · 28g protein</div>
+              <a class="recipe-link" href="recipe.html?id=23">View recipe →</a>
+            </div>
+          </div>
+          <div class="day-total">~1,520 cal base + snack (~280) = ~1,800 cal · 94g protein — add 1 tbsp ghee + 20g almonds to close gap</div>
+        </div>
+      </div>
+
+      <!-- TUE -->
+      <div class="day-row">
+        <div class="day-label">Tue</div>
+        <div>
+          <div class="day-meals">
+            <div class="meal-slot">
+              <div class="meal-slot-label">Breakfast</div>
+              <div class="meal-slot-name">Masala Egg & Black Bean Bowl</div>
+              <div class="meal-slot-cal">520 cal · 38g protein</div>
+              <a class="recipe-link" href="recipe.html?id=22">View recipe →</a>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Lunch</div>
+              <div class="meal-slot-name">Asian Dense Bean Salad (leftover)</div>
+              <div class="meal-slot-cal">748 cal · 42g protein</div>
+              <a class="recipe-link" href="recipe.html?id=07">View recipe →</a>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Dinner</div>
+              <div class="meal-slot-name">Tofu Miso Stir-Fry with Broccoli</div>
+              <div class="meal-slot-cal">510 cal · 36g protein</div>
+              <a class="recipe-link" href="recipe.html?id=24">View recipe →</a>
+            </div>
+          </div>
+          <div class="day-total">~1,778 cal + snack = ~2,060 cal · 116g protein</div>
+        </div>
+      </div>
+
+      <!-- WED -->
+      <div class="day-row">
+        <div class="day-label">Wed<br><span style="font-size:0.6rem;font-weight:400;">Mid-week top-up</span></div>
+        <div>
+          <div class="day-meals">
+            <div class="meal-slot">
+              <div class="meal-slot-label">Breakfast</div>
+              <div class="meal-slot-name">Egg & Lentil Power Bowl</div>
+              <div class="meal-slot-cal">490 cal · 40g protein</div>
+              <a class="recipe-link" href="recipe.html?id=26">View recipe →</a>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Lunch</div>
+              <div class="meal-slot-name">Paneer & Chickpea Tikka Bowl</div>
+              <div class="meal-slot-cal">595 cal · 42g protein</div>
+              <a class="recipe-link" href="recipe.html?id=25">View recipe →</a>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Dinner</div>
+              <div class="meal-slot-name">Super Veggie Bowl</div>
+              <div class="meal-slot-cal">489 cal · 26g protein</div>
+              <a class="recipe-link" href="recipe.html?id=01">View recipe →</a>
+            </div>
+          </div>
+          <div class="day-total">~1,574 cal + snack = ~1,854 cal · 108g protein — buy fresh spinach + tomatoes today</div>
+        </div>
+      </div>
+
+      <!-- THU -->
+      <div class="day-row">
+        <div class="day-label">Thu</div>
+        <div>
+          <div class="day-meals">
+            <div class="meal-slot">
+              <div class="meal-slot-label">Breakfast</div>
+              <div class="meal-slot-name">Masala Egg & Black Bean Bowl</div>
+              <div class="meal-slot-cal">520 cal · 38g protein</div>
+              <a class="recipe-link" href="recipe.html?id=22">View recipe →</a>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Lunch</div>
+              <div class="meal-slot-name">Black Bean & Roasted Veg Salad with Tahini</div>
+              <div class="meal-slot-cal">545 cal · 26g protein</div>
+              <a class="recipe-link" href="recipe.html?id=27">View recipe →</a>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Dinner</div>
+              <div class="meal-slot-name">Spiced Turkey & Lentil Keema</div>
+              <div class="meal-slot-cal">510 cal · 48g protein</div>
+              <a class="recipe-link" href="recipe.html?id=28">View recipe →</a>
+            </div>
+          </div>
+          <div class="day-total">~1,575 cal + snack = ~1,855 cal · 112g protein — swap turkey for lentil dal to keep vegetarian</div>
+        </div>
+      </div>
+
+      <!-- FRI -->
+      <div class="day-row">
+        <div class="day-label">Fri</div>
+        <div>
+          <div class="day-meals">
+            <div class="meal-slot">
+              <div class="meal-slot-label">Breakfast</div>
+              <div class="meal-slot-name">Chickpea Veg Frittata (batch baked)</div>
+              <div class="meal-slot-cal">322 cal · 17g protein</div>
+              <a class="recipe-link" href="recipe.html?id=21">View recipe →</a>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Lunch</div>
+              <div class="meal-slot-name">Paneer & Chickpea Tikka Bowl (leftover)</div>
+              <div class="meal-slot-cal">595 cal · 42g protein</div>
+              <a class="recipe-link" href="recipe.html?id=25">View recipe →</a>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Dinner</div>
+              <div class="meal-slot-name">Tofu Miso Stir-Fry or Dal (freezer)</div>
+              <div class="meal-slot-cal">510 cal · 36g protein</div>
+              <a class="recipe-link" href="recipe.html?id=24">View recipe →</a>
+            </div>
+          </div>
+          <div class="day-total">~1,427 cal + snack = ~1,707 cal · 95g protein — Friday is flex, fridge clean-out day</div>
+        </div>
+      </div>
+
+      <!-- SAT — CHEAT DAY -->
+      <div class="day-row cheat-day">
+        <div class="day-label">Sat<br><span style="font-size:0.6rem;font-weight:400;">Cheat Day</span></div>
+        <div>
+          <div class="day-meals">
+            <div class="meal-slot">
+              <div class="meal-slot-label">All day</div>
+              <div class="meal-slot-name">No rules. Eat what you want.</div>
+              <div class="meal-slot-cal">Psychological reset + metabolic refeed</div>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">One rule</div>
+              <div class="meal-slot-name">Don't let it become Cheat Weekend</div>
+              <div class="meal-slot-cal">Sunday prep still happens</div>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Evening</div>
+              <div class="meal-slot-name">Sunday prep starts tonight if possible</div>
+              <div class="meal-slot-cal">Cook lentils before bed → less Sunday stress</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUN -->
+      <div class="day-row">
+        <div class="day-label">Sun<br><span style="font-size:0.6rem;font-weight:400;">Prep Day</span></div>
+        <div>
+          <div class="day-meals">
+            <div class="meal-slot">
+              <div class="meal-slot-label">Breakfast</div>
+              <div class="meal-slot-name">Eggs any style — eat what's in fridge</div>
+              <div class="meal-slot-cal">~350 cal</div>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Lunch</div>
+              <div class="meal-slot-name">Asian Dense Bean Salad (fresh batch)</div>
+              <div class="meal-slot-cal">748 cal · 42g protein</div>
+              <a class="recipe-link" href="recipe.html?id=07">View recipe →</a>
+            </div>
+            <div class="meal-slot">
+              <div class="meal-slot-label">Dinner</div>
+              <div class="meal-slot-name">Lemon Red Lentil Soup</div>
+              <div class="meal-slot-cal">337 cal · 18g protein</div>
+              <a class="recipe-link" href="recipe.html?id=11">View recipe →</a>
+            </div>
+          </div>
+          <div class="day-total">Sunday = meal prep day. 60 minutes in the kitchen sets up the full week.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAILY SNACK -->
+  <div class="plan-section">
+    <p class="plan-section-title">Daily Snack (Both People)</p>
+    <div style="border: 1px solid var(--gray-200); padding: 1.5rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+      <div>
+        <div style="font-size:0.7rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--green); margin-bottom:0.5rem;">Option A</div>
+        <strong style="font-size:0.95rem;">Whey shake + 20g almonds</strong>
+        <p style="font-size:0.82rem; color:var(--gray-500); margin-top:0.3rem;">~260 cal · 28g protein</p>
+        <p style="font-size:0.82rem; color:var(--gray-700); margin-top:0.3rem;">Armaan's default. Blend with water or almond milk. Akshita skips the shake, keeps the almonds.</p>
+      </div>
+      <div>
+        <div style="font-size:0.7rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--green); margin-bottom:0.5rem;">Option B</div>
+        <strong style="font-size:0.95rem;">2 hard-boiled eggs + walnuts</strong>
+        <p style="font-size:0.82rem; color:var(--gray-500); margin-top:0.3rem;">~230 cal · 16g protein</p>
+        <p style="font-size:0.82rem; color:var(--gray-700); margin-top:0.3rem;">If shake bag not handy. Hard-boiled eggs live in the fridge all week from Sunday batch.</p>
+      </div>
+      <div>
+        <div style="font-size:0.7rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--green); margin-bottom:0.5rem;">Option C</div>
+        <strong style="font-size:0.95rem;">Greek yogurt (plain, full-fat)</strong>
+        <p style="font-size:0.82rem; color:var(--gray-500); margin-top:0.3rem;">~150 cal · 15g protein</p>
+        <p style="font-size:0.82rem; color:var(--gray-700); margin-top:0.3rem;">Best for Akshita — PCOS friendly, low glycemic, high protein. Add cinnamon, not honey.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUNDAY PREP SEQUENCE -->
+  <div class="plan-section">
+    <p class="plan-section-title">Sunday Prep Sequence — 60 Minutes for 2 People</p>
+    <p style="font-size:0.88rem; color:var(--gray-700); margin-bottom:1.5rem; line-height:1.6;">Everything runs in parallel. Do not cook sequentially — that's how it takes 3 hours. Start everything that has passive cook time first, then chop while it cooks.</p>
+
+    <div class="prep-timeline">
+      <div class="prep-row">
+        <div class="prep-time">0:00</div>
+        <div class="prep-action">
+          <strong>Start pressure cooker: Spiced Lentil Dal with Cauliflower (Recipe #23) — double batch</strong>
+          <span>25–30 min hands-off. This is Mon + Thu dinner for both. While it cooks, do everything else.</span>
+        </div>
+      </div>
+      <div class="prep-row">
+        <div class="prep-time">0:03</div>
+        <div class="prep-action">
+          <strong>Hard-boil 12–14 eggs</strong>
+          <span>12 min. Armaan 3/day × 5 days = 15 eggs. Akshita 2/day × 3 days = 6. Buy 2 dozen total.</span>
+        </div>
+      </div>
+      <div class="prep-row">
+        <div class="prep-time">0:05</div>
+        <div class="prep-action">
+          <strong>Sheet pan: roast bell peppers + broccoli + zucchini</strong>
+          <span>400°F, 22 min. These go in Black Bean Salad (Tue + Thu lunch), Paneer Bowl (Wed), and stir-fry base.</span>
+        </div>
+      </div>
+      <div class="prep-row">
+        <div class="prep-time">0:08</div>
+        <div class="prep-action">
+          <strong>Chop the week: dice 3 onions, mince 1 garlic bulb, grate 2 tbsp ginger — store in small jars</strong>
+          <span>The single biggest weekday time-saver. Put in jars in fridge. Eliminates daily friction completely.</span>
+        </div>
+      </div>
+      <div class="prep-row">
+        <div class="prep-time">0:20</div>
+        <div class="prep-action">
+          <strong>Make Asian Dense Bean Salad (Recipe #07) — double batch</strong>
+          <span>No-cook assembly. Will be Sun lunch + Tue lunch. Dress half now, leave half undressed for Tue.</span>
+        </div>
+      </div>
+      <div class="prep-row">
+        <div class="prep-time">0:30</div>
+        <div class="prep-action">
+          <strong>Eggs done → cool in ice water, peel half now</strong>
+          <span>Store unpeeled eggs in carton in fridge (last longer). Peel only what you'll eat in 2 days.</span>
+        </div>
+      </div>
+      <div class="prep-row">
+        <div class="prep-time">0:32</div>
+        <div class="prep-action">
+          <strong>Make Black Bean & Roasted Veg Salad (Recipe #27) base — no dressing yet</strong>
+          <span>Grab roasted veg from oven, combine with beans, spinach, seeds. Pack dressing separately. Mon + Thu lunch.</span>
+        </div>
+      </div>
+      <div class="prep-row">
+        <div class="prep-time">0:40</div>
+        <div class="prep-action">
+          <strong>Dal done → portion into 4 large containers (labeled)</strong>
+          <span>2 for Mon/Thu dinner, 2 in freezer as backup. Dal improves in flavor overnight. Add water when reheating.</span>
+        </div>
+      </div>
+      <div class="prep-row">
+        <div class="prep-time">0:45</div>
+        <div class="prep-action">
+          <strong>Portion whey shake bags (Armaan's snacks)</strong>
+          <span>5 pre-measured bags. Takes 5 min. Zero thinking on weekday afternoons.</span>
+        </div>
+      </div>
+      <div class="prep-row">
+        <div class="prep-time">0:50</div>
+        <div class="prep-action">
+          <strong>Fridge organize + label everything</strong>
+          <span>Masking tape + sharpie on every container. Write name + date. Move old to front, new to back (FIFO).</span>
+        </div>
+      </div>
+      <div class="prep-row">
+        <div class="prep-time">1:00</div>
+        <div class="prep-action">
+          <strong>Done. Wash everything immediately.</strong>
+          <span>Fill sink with hot soapy water now — not later. Pots with stuck dal: fill with water + soap, leave 20 min. Wipes clean.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GROCERY LIST -->
+  <div class="plan-section">
+    <p class="plan-section-title">Weekly Grocery List — 2 People, ~$65–75</p>
+    <p style="font-size:0.88rem; color:var(--gray-700); margin-bottom:1.5rem; line-height:1.6;">Buy Sunday. Top-up Wednesday (fresh greens, tomatoes, yogurt). Dry goods are 2–3 week buys.</p>
+
+    <div class="grocery-grid">
+      <div class="grocery-col">
+        <div class="grocery-col-title">Proteins</div>
+        <ul>
+          <li>Eggs <span class="qty">2 dozen (24)</span></li>
+          <li>Extra-firm tofu <span class="qty">2 blocks (800g)</span></li>
+          <li>Paneer <span class="qty">200g block</span></li>
+          <li>Ground turkey (optional) <span class="qty">400g</span></li>
+          <li>Greek yogurt, plain full-fat <span class="qty">2× 500g tubs</span></li>
+          <li>ON Whey Protein (Armaan) <span class="qty">existing supply</span></li>
+        </ul>
+      </div>
+      <div class="grocery-col">
+        <div class="grocery-col-title">Legumes</div>
+        <ul>
+          <li>Red lentils (dry) <span class="qty">500g bag</span></li>
+          <li>Black or green lentils (dry) <span class="qty">500g bag</span></li>
+          <li>Black beans (canned) <span class="qty">3 cans</span></li>
+          <li>Chickpeas (canned) <span class="qty">3 cans</span></li>
+          <li>Edamame (frozen, shelled) <span class="qty">1 bag (400g)</span></li>
+        </ul>
+      </div>
+      <div class="grocery-col">
+        <div class="grocery-col-title">Fresh Veg</div>
+        <ul>
+          <li>Broccoli <span class="qty">2 large heads</span></li>
+          <li>Cauliflower <span class="qty">1 large head</span></li>
+          <li>Bell peppers (mixed colors) <span class="qty">5–6</span></li>
+          <li>Zucchini <span class="qty">2</span></li>
+          <li>Baby spinach <span class="qty">2 bags (150g each)</span></li>
+          <li>Cherry tomatoes <span class="qty">1 pint</span></li>
+          <li>Cucumber <span class="qty">1</span></li>
+          <li>Red onion <span class="qty">1</span></li>
+          <li>Yellow onion <span class="qty">4–5 (bulk)</span></li>
+          <li>Garlic bulbs <span class="qty">2</span></li>
+          <li>Fresh ginger <span class="qty">1 knob</span></li>
+          <li>Shiitake mushrooms <span class="qty">200g</span></li>
+        </ul>
+      </div>
+      <div class="grocery-col">
+        <div class="grocery-col-title">Pantry + Fats</div>
+        <ul>
+          <li>Ghee <span class="qty">small jar (if low)</span></li>
+          <li>Olive oil (EVOO) <span class="qty">existing supply</span></li>
+          <li>Tahini <span class="qty">1 jar</span></li>
+          <li>White miso paste <span class="qty">1 tub</span></li>
+          <li>Tamari / soy sauce (low sodium) <span class="qty">1 bottle</span></li>
+          <li>Apple cider vinegar <span class="qty">existing</span></li>
+          <li>Almonds (raw) <span class="qty">200g bag</span></li>
+          <li>Walnuts <span class="qty">100g</span></li>
+          <li>Pumpkin seeds <span class="qty">100g</span></li>
+          <li>Turmeric, cumin, coriander, garam masala <span class="qty">restock if low</span></li>
+          <li>Lemon / lime <span class="qty">4–5</span></li>
+          <li>Frozen spinach (backup) <span class="qty">1 bag</span></li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:0.8rem; color:var(--gray-500); margin-top:1rem;">Wednesday top-up: fresh spinach (1 bag), tomatoes, Greek yogurt, any protein running low.</p>
+  </div>
+
+  <!-- FRIDGE ORGANIZATION -->
+  <div class="plan-section">
+    <p class="plan-section-title">Fridge Layout</p>
+    <p style="font-size:0.88rem; color:var(--gray-700); margin-bottom:1.5rem; line-height:1.6;">If you can't see it, you won't eat it. Eye level = this week's food.</p>
+
+    <div class="fridge-diagram">
+      <div class="fridge-zone top">
+        <div class="fridge-zone-label">Top shelf<br><span style="color:var(--gray-500); font-weight:400; font-size:0.65rem;">(eye level)</span></div>
+        <div class="fridge-zone-content">
+          <strong>This week's prepped containers.</strong> Dal portions, bean salad (undressed), roasted veg. Everything labeled with name + date. If it's here, it gets eaten.
+        </div>
+      </div>
+      <div class="fridge-zone middle">
+        <div class="fridge-zone-label">Middle shelf</div>
+        <div class="fridge-zone-content">
+          Tofu submerged in water in a sealed container (changes water every 2 days → lasts 5 days). Paneer same method. Greek yogurt tubs. Hard-boiled eggs in their carton.
+        </div>
+      </div>
+      <div class="fridge-zone bottom">
+        <div class="fridge-zone-label">Bottom shelf<br><span style="color:var(--gray-500); font-weight:400; font-size:0.65rem;">(coldest)</span></div>
+        <div class="fridge-zone-content">
+          Raw ground turkey if using. Opened canned beans in a sealed container. Anything that needs maximum cold.
+        </div>
+      </div>
+      <div class="fridge-zone middle">
+        <div class="fridge-zone-label">Crisper drawers</div>
+        <div class="fridge-zone-content">
+          <strong>Separate wet from dry.</strong> Left: broccoli, cauliflower, peppers (wet veg). Right: spinach bags lined with paper towel top + bottom (dry greens). Never mix — ethylene gas from one wilts the other. Garlic jar + ginger jar live here too.
+        </div>
+      </div>
+      <div class="fridge-zone middle">
+        <div class="fridge-zone-label">Door shelves</div>
+        <div class="fridge-zone-content">
+          Condiments only. Miso, tahini, tamari, ACV, hot sauce, mustard. Never store eggs or dairy here — door is 4–6°F warmer than back of fridge.
+        </div>
+      </div>
+      <div class="fridge-zone freezer">
+        <div class="fridge-zone-label freezer-label">Freezer</div>
+        <div class="fridge-zone-content">
+          2 portions of dal (backup — Wednesday cliff insurance). Frozen spinach + edamame bags standing upright like books. Extra tofu — freezing tofu changes texture to chewy/meaty, ideal for stir-fry. Label everything.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTAINER SYSTEM -->
+  <div class="plan-section">
+    <p class="plan-section-title">Container System</p>
+    <div class="rules-grid">
+      <div class="rule-card">
+        <div class="rule-num">Glass only</div>
+        <div class="rule-title">Buy glass, not plastic</div>
+        <div class="rule-body">Microwave-safe without leaching. Doesn't absorb turmeric or curry smell. Lasts years. Pyrex or IKEA glass with clip lids. ~$30 to kit out fully.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">Quantity</div>
+        <div class="rule-title">14+ containers minimum</div>
+        <div class="rule-body">4× large (dal, batch dishes). 4× medium (salads, individual portions). 4× small (sauces, dressings, minced garlic). 2× leak-proof Sistema for work bags.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">Work bags</div>
+        <div class="rule-title">Leak-proof only for commuting</div>
+        <div class="rule-body">Keep 2 dedicated work containers. Pack the night before — morning you will not make good decisions. Pack with sauce in a separate 2 oz deli cup. Add dressing at work.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">Moisture trick</div>
+        <div class="rule-title">Paper towel inside chopped veg</div>
+        <div class="rule-body">Lay a dry paper towel on top of chopped broccoli/peppers before sealing. Absorbs condensation. Extends shelf life from 2 days to 4–5 days.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REHEATING RULES -->
+  <div class="plan-section">
+    <p class="plan-section-title">Reheating Rules</p>
+    <div class="rules-grid">
+      <div class="rule-card">
+        <div class="rule-num">Dal / lentils</div>
+        <div class="rule-title">Add water, cover, 70% power</div>
+        <div class="rule-body">Add 2 tbsp water before microwaving. Cover with damp paper towel. 70% power for 2 min, stir once. Full power makes them dry and stiff.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">Tofu / Paneer</div>
+        <div class="rule-title">Stovetop only — 2 min dry pan</div>
+        <div class="rule-body">Microwave makes them rubbery. 2 min in a dry hot pan re-crisps the outside completely. Worth the extra pan.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">Roasted veg</div>
+        <div class="rule-title">Microwave or eat room temp</div>
+        <div class="rule-body">For crisp texture: air fryer 5 min at 400°F. For quick/lazy: microwave with damp paper towel cover is fine — they don't degrade badly.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">Eggs</div>
+        <div class="rule-title">Eat cold or 20 sec max</div>
+        <div class="rule-body">Hard-boiled eggs are best cold or room temp. If you must warm: max 20 seconds, no shell, uncovered. Never microwave a shell-on egg.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHEAT DAY -->
+  <div class="plan-section">
+    <p class="plan-section-title">Cheat Day Protocol</p>
+    <div class="cheat-banner">
+      <p><strong>Saturday is fully off.</strong> Eat whatever. This isn't a flaw in the system — it's what makes the system sustainable. The psychological reset prevents binge-restrict cycles. The metabolic refeed (especially carbs) signals to your body it's not in a deficit, which supports hormone function particularly important for Akshita's PCOS.</p>
+      <p style="margin-top:0.75rem;"><strong>The only rule:</strong> Sunday grocery run and meal prep still happen. If you do nothing else, batch the lentils before bed Saturday night. That single move makes Sunday prep 40% faster.</p>
+    </div>
+  </div>
+
+  <!-- THE 10 THINGS PEOPLE FORGET -->
+  <div class="plan-section">
+    <p class="plan-section-title">The 10 Things People Forget</p>
+    <div class="rules-grid">
+      <div class="rule-card">
+        <div class="rule-num">01</div>
+        <div class="rule-title">The Wednesday Cliff</div>
+        <div class="rule-body">Sunday batch runs out by Wed/Thu. Fix: dal in freezer as insurance, Wednesday top-up run for spinach + tomatoes.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">02</div>
+        <div class="rule-title">Onion + garlic not prepped = you won't cook</div>
+        <div class="rule-body">Sunday: dice 3 onions, mince a full garlic bulb, grate 2 tbsp ginger. Store in labeled jars. This one task eliminates 80% of weekday friction.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">03</div>
+        <div class="rule-title">Sauce rotation prevents flavor fatigue</div>
+        <div class="rule-body">Same base food, different sauce = different meal. Keep: tahini, miso, hot sauce, ACV. Rotate across the week so you're not eating identical bowls daily.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">04</div>
+        <div class="rule-title">Containers run out mid-week</div>
+        <div class="rule-body">You pack 2 work lunches, come home without them. Monday batch containers are dirty. Wash or run dishwasher every 2 days without fail.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">05</div>
+        <div class="rule-title">Spinach dies before you use it</div>
+        <div class="rule-body">Buy 1 bag Sunday, 1 bag Wednesday. Or go 100% frozen spinach — identical nutrition, zero waste, no wilting.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">06</div>
+        <div class="rule-title">Salad dressing packed wrong</div>
+        <div class="rule-body">Never dress salad the night before. Pack dressing in a 2 oz deli cup separately. Add at lunch. Prevents soggy spinach soup by noon.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">07</div>
+        <div class="rule-title">Breakfast is a separate system</div>
+        <div class="rule-body">Most prep guides only cover lunch/dinner. Breakfast = prepped lentils (Sunday batch) + hard-boiled eggs + 5 min tadka. Assembly, not cooking.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">08</div>
+        <div class="rule-title">Not portioning for two different sizes</div>
+        <div class="rule-body">Armaan: 1.3× portions. Akshita: 1×. Pre-portion into separate labeled containers on Sunday. Guessing eyeball at meal time leads to one person always short or overeating.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">09</div>
+        <div class="rule-title">Turmeric stains everything within 30 min</div>
+        <div class="rule-body">Don't let turmeric-coated pots sit. Fill with water + soap immediately. Turmeric on plastic containers becomes permanent. Stick to glass.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">10</div>
+        <div class="rule-title">Work snack drawer</div>
+        <div class="rule-body">Keep a bag of almonds + walnuts at your desk. Prevents vending machine decisions at 3pm entirely. The cheapest nutrition upgrade you'll ever make.</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<footer>
+  Meal plan by <a href="https://armaanagrawal.com">Armaan Agrawal</a>. Recipes from <a href="index.html">Blueprint Recipes</a> and original slow-carb adaptations.
+</footer>
+
+</body>
+</html>
