@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slow Carb Recipes — Armaan</title>
+  <meta name="description" content="7 slow-carb recipes for two — Indian, Japanese, and high-protein vegetarian meals optimized for a 9-5 lifestyle. Semi-vegetarian, PCOS-friendly, batch-cook friendly.">
+
+  <meta property="og:title" content="Slow Carb Recipes" />
+  <meta property="og:description" content="High-protein slow-carb meals for two. Indian + Japanese style, vegetarian-friendly, batch-cook Sunday system." />
+  <meta property="og:image" content="https://recipes.armaanagrawal.com/og-image.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://recipes.armaanagrawal.com/slow-carb.html" />
+
+  <link rel="stylesheet" href="https://use.typekit.net/kyi7jre.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="https://armaanagrawal.com">A.A.</a>
+</nav>
+
+<div class="page-wrap">
+
+  <header class="hero">
+    <p class="hero-eyebrow">Tim Ferriss · Slow Carb · 2 People</p>
+    <h1>Slow Carb<br><span>Recipes</span></h1>
+    <p class="hero-tagline">7 high-protein, legume-forward meals for a 9-to-5 lifestyle — Indian and Japanese-style, batch-cook friendly, PCOS-compatible. One cheat day built in.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>7</strong><span>Recipes</span></div>
+      <div class="hero-stat"><strong>~500</strong><span>Cal / serving</span></div>
+      <div class="hero-stat"><strong>35g+</strong><span>Protein avg</span></div>
+    </div>
+    <a href="index.html" class="hero-nav-link">Blueprint Recipes →</a>
+    <a href="meal-plan.html" class="hero-nav-link" style="margin-left:1rem;">Weekly Meal Plan →</a>
+  </header>
+
+  <div class="filter-bar" role="tablist" aria-label="Filter by meal">
+    <button class="filter-btn active" data-meal="all" role="tab" aria-selected="true">All <span class="filter-count">7</span></button>
+    <button class="filter-btn" data-meal="breakfast" role="tab" aria-selected="false">Breakfast <span class="filter-count">2</span></button>
+    <button class="filter-btn" data-meal="lunch" role="tab" aria-selected="false">Lunch <span class="filter-count">2</span></button>
+    <button class="filter-btn" data-meal="dinner" role="tab" aria-selected="false">Dinner <span class="filter-count">3</span></button>
+  </div>
+
+  <div class="section-header">
+    <span class="section-title" id="section-label">All Recipes</span>
+    <span class="section-count" id="recipe-count">7</span>
+  </div>
+
+  <main class="grid" id="recipe-grid" aria-label="Recipe grid">
+    <!-- populated by slowcarb-app.js -->
+  </main>
+
+</div>
+
+<footer>
+  Slow Carb system by <a href="https://armaanagrawal.com">Armaan Agrawal</a>. Based on Tim Ferriss' <em>4-Hour Body</em> protocol. See also: <a href="index.html">Blueprint Recipes</a>.
+</footer>
+
+<script src="slowcarb-app.js"></script>
+</body>
+</html>
